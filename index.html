@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
     <title>Fitcheck</title>
-    <link rel="stylesheet" href="main.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div class="center">
-      <div class="outer circle">
-        <a href="/Login/index.html"><button>Fitcheck</button></a>
-        <span></span>
-        <span></span>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="" id="form1">
+            <h2>Login</h2>
+            <div class="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="number" />
+              <label for="">User_Code</label>
+            </div>
+
+            <div class="forget">
+              <label for=""
+                ><input type="checkbox" />Remember Me &nbsp;
+                <a href="/forgot user_code/Progress Form/loader.html"
+                  >Forget User_Code</a
+                ></label
+              >
+            </div>
+          </form>
+          <a href="/CB/Progress Form/loader.html"
+            ><button id="button">Log In</button></a
+          >
+          <div class="register">
+            <p>
+              Don't have a account
+              <a href="/Register/Login/Progress Form/loader.html">Register</a>
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <script>
-      const button = document.querySelector(".outer ");
-      button.addEventListener("click", (e) => {
-        e.preventDefault;
-        button.classList.add("animate");
-        setTimeout(() => {
-          button.classList.remove("animate");
-        }, 600);
-      });
-    </script>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
